@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module">
+			import { index } from "./index.js";
+
+			window.onload = function() {
+				index();
+			}
+		</script>
     <title>Vite + React</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+		
+		<div class="alert" id="alert" style="display: none;">
+			<div class="alert_box">
+				<div class="alert_title">
+					<span id="alert_title">系統訊息</span>
+					<input type="button" name="button" id="alert_close" value="✖" />
+				</div>
+				<div class="alert_msg">
+					<p id="alert_msg"></p>
+				</div>
+				<div class="alert_btn">
+					<input type="button" name="button" id="alert_chk" value="確定" />
+					<input type="button" name="button" id="alert_cxl" value="取消" />
+				</div>
+			</div>
+		</div>
   </body>
 </html>

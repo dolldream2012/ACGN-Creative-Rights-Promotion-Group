@@ -20,3 +20,19 @@ body{
         font-size: calc(100vw / 375); /* 1px = 1rem in 375px wide */
     }
 }
+
+/* 訊息 */
+.alert { background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center; }
+.alert_box { position: fixed; top: 25%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 175px; border-bottom: 2px solid #aaa; border-right: 2px solid #aaa; border-radius: 4px; background-color: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); z-index: 1000; }
+.alert_title { height: 30px; padding: 0 5px; background-color: #ccc; color: #000; font-weight: bold; display: flex; align-items: center; justify-content: space-between; }
+.alert_title input[type="button"] { border: none; background-color: transparent; font-size: 16px; color: #000; transition: font-size 0.3s ease-in-out; }
+.alert_title input[type="button"]:hover { transform: scale(1.5); }
+.alert_msg { font-size: 20px; height: 50px; padding: 10px; }
+.alert_msg p { margin: 0; padding: 0; text-align: left; }
+.alert_btn { display: flex; justify-content: center; align-items: flex-end; position: absolute; bottom: 0; left: 0; right: 0; }
+.alert_btn input[type="button"] { border: none; width: 72px; height: 40px; font-size: 20px; font-weight: bold; color: #fff; margin: 8px 0; outline: none; }
+.alert_btn input[type="button"]:hover { font-size: 21px; }
+.alert_btn input[type="button"]:first-child { background-color: #163c65; }
+.alert_btn input[type="button"]:last-child { background-color: #6d6d6d; }
+.alert_btn input[type="button"]:first-child:hover { background-color: #225a95; }
+.alert_btn input[type="button"]:last-child:hover { background-color: #828282; }
